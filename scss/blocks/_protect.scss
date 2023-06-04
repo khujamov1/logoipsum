@@ -1,0 +1,65 @@
+@use "../mixins";
+
+.protect {
+    padding-top: 14px;
+}
+.protect__list {
+    @include mixins.listUnstyled;
+    display: flex;
+    flex-direction: column;
+}
+.protect__item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 45px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.protect__img {
+    display: block;
+    width: 332px;
+    height: 352px;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 50px;
+    margin-left: auto;
+}
+.protect__img--sec {
+    display: block;
+    width: 343px;
+    height: 240px;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 50px;
+    margin-left: auto;
+}
+.protect__text-box {
+    text-align: center;
+}
+.protect__item-title {
+    @include mixins.titleUnstyled;
+    font-size: 38px;
+    line-height: 120%;
+    letter-spacing: -0.01em;
+    margin-bottom: 16px;
+    color: #211F25;
+}
+.protect__desc {
+    font-size: 16px;
+    line-height: 155%;
+    letter-spacing: 0.02em;
+    margin-top: 0;
+    margin-bottom: 40px;
+    color: #3D3A41;
+}
+.protect__link {
+    @include mixins.linkStyled;
+    font-weight: 600;
+    font-size: 16px;
+    width: 187px;
+    margin: 0 auto;
+    line-height: 155%;
+    letter-spacing: 0.01em;
+    color: var(--main-pink-color);
+    border: 1px solid var(--main-pink-color);
+}

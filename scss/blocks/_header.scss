@@ -1,0 +1,23 @@
+.site-header {
+    padding: 55px 0;
+}
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__button {
+    width: 32px;
+    height: 32px;
+    background-color: transparent;
+    border: none;
+    background-image: url("/images/icons/switchbtn.svg");
+}
+.header__menu {
+    width: 26px;
+    height: 26px;
+    border: none;
+    background-color: transparent;
+    background-image: url("/images/icons/hamburgerbtn.svg");
+    background-size: 26px 26px;
+}
