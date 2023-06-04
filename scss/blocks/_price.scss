@@ -26,10 +26,75 @@
 .price__item {
     margin-top: 18px;
     padding: 12px;
+    border: 1px solid transparent;
+    border-radius: 17px;
 }
-
-
+.price__item:hover {
+    border: 1px solid var(--main-pink-color);
+}
+.price__item:hover .price__link {
+    background-color: var(--main-pink-color);
+    color: #fff;
+}
+.price__item-title {
+    @include mixins.titleUnstyled;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 8px;
+    line-height: 150%;
+    letter-spacing: -0.01em;
+    color: #211F25;
+}
+.price__cost {
+    font-family: "Nunito";
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 120%;
+    text-align: center;
+    color: #211F25;
+}
+.price__add-cost {
+    margin-top: 8px;
+    margin-bottom: 0;
+    line-height: 155%;
+    letter-spacing: 0.02em;
+    color: #3D3A41;
+}
 .limit__list {
     @include mixins.listUnstyled;
+    margin-top: 39px;
+    margin-bottom: 23px;
+    margin-left: 50px;
     text-align: left;
+}
+.limit__item {
+    position: relative;
+    margin-bottom: 16px;
+    line-height: 155%;
+    letter-spacing: 0.02em;
+    color: #3D3A41;
+}
+.limit__item::before {
+    position: absolute;
+    top: 6px;
+    left: -36px;
+    width: 17px;
+    height: 122px;
+    background-color: transparent;
+    background-image: url("/images/icons/succes.svg");
+    background-repeat: no-repeat;
+    content: "";
+}
+.price__link {
+    display: block;
+    padding: 16px 0;
+    font-family: 'Roboto';
+    font-weight: 400;
+    line-height: 150%;
+    color: var(--main-pink-color);
+    text-decoration: none;
+    border: 1px solid var(--main-pink-color);
+    border-radius: 32px;
 }
