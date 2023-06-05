@@ -14,7 +14,7 @@
     font-size: 36px;
     line-height: 49px;
     letter-spacing: -0.01em;
-    color: #211F25;
+    color: var (--main-dark-color);
 }
 .news__info {
     font-size: 18px;
@@ -67,7 +67,7 @@
     line-height: 150%;
     margin-right: 15px;
     padding: 4px 8px;
-    color: #211F25;
+    color: var (--main-dark-color);
     background-color: #f4f4f4;
 }
 .news__time-desc {
@@ -83,7 +83,7 @@
     font-size: 23px;
     line-height: 140%;
     margin-bottom: 8px;
-    color: #211F25;
+    color: var (--main-dark-color);
 }
 .news__desc-box {
     width: 262px;
