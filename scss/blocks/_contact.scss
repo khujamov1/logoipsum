@@ -2,7 +2,7 @@
 
 .contact {
     margin-top: 40px;
-    display: inline-block;
+    display: block;
     padding: 83px 0;
     background-color: #6B50FF;
 }
@@ -68,4 +68,20 @@
     font-size: 12px;
     line-height: 150%;
     color: #FFFFFF;
+}
+
+@media only screen and (min-width: 1240px) {
+    .contact {
+        margin-top: 100px;
+    }
+    .contact__title {
+        font-size: 48px;
+        margin-bottom: 24px;
+    }
+    .contact__info {
+        margin-bottom: 40px;
+    }
+    .contact__form {
+        margin-bottom: 16px;
+    }
 }

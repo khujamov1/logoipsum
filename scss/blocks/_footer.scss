@@ -27,7 +27,7 @@
     font-size: 16px;
     text-decoration: none;
     line-height: 150%;
-    color: #FFFFFF;
+    color: #fff;
 }
 .footer__strong {
     @include mixins.titleUnstyled;
@@ -36,7 +36,17 @@
     margin-bottom: 10px;
     color: #FFFFFF;
 }
-
+.footer__top-desc {
+    display: none;
+    margin-top: 20px;
+    margin-bottom: 0;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    color: #fff;
+}
+.footer__top-right-lin {
+    color: #fff;
+}
 .footer__bottom {
     padding-top: 20px;
     border-top: 1px solid #fff;
@@ -58,8 +68,51 @@
     font-weight: 400;
     font-size: 14px;
     text-align: center;
+    margin: 0;
     line-height: 150%;
     color: #fff;
 }
 
 
+@media only screen and (min-width: 763px) {
+    .site-footer {
+        padding: 70px 0;
+    }
+    .footer__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .footer__item {
+        width: 140px;
+    }
+    .footer__top-desc {
+        display: block;
+    }
+    .footer__bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 32px;
+    }
+    .footer__bottom-links {
+        margin-bottom: 0;
+    }
+    .footer__bottom-link {
+        margin-right: 24px;
+    }
+}
+@media only screen and (min-width: 980px) {
+    .footer__top {
+        margin-bottom: 80px;
+    }
+    .footer__list {
+        height: auto;
+        margin-bottom: 0;
+        flex-direction: row;
+    }
+    .footer__item {
+        width: auto;
+        margin-right: 32px;
+    }
+}

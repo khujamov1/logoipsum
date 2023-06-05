@@ -27,10 +27,13 @@
 }
 .solution__list {
     @include mixins.listUnstyled;
+    display: flex;
+    flex-direction: column;
 }
 .solution__item {
     display: flex;
     flex-direction: column;
+    max-width: 406px;
     margin-top: 30px;
     padding: 16px 0;
 }
@@ -77,4 +80,11 @@
     letter-spacing: 0.02em;
     text-decoration: none;
     color: #211F25;
+}
+
+@media only screen and (min-width: 1240px) {
+    .solution__list {
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }

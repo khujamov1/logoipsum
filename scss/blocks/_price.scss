@@ -21,7 +21,8 @@
 .price__list {
     @include mixins.listUnstyled;
     display: flex;
-    flex-direction: column
+    flex-direction: column;
+    margin: 0 auto;
 }
 .price__item {
     margin-top: 18px;
@@ -97,4 +98,18 @@
     text-decoration: none;
     border: 1px solid var(--main-pink-color);
     border-radius: 32px;
+}
+
+@media only screen and (min-width: 1140px) {
+    .price__desc{
+        margin-bottom: 80px;
+    }
+    .price__list {
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0;
+    }
+    .price__item {
+        max-width: 406px;
+    }
 }
