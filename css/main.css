@@ -420,10 +420,20 @@ body {
   background-position: -118px 0;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 376px) {
   .hero {
     background-image: url("/images/images/herobgd.svg");
-    background-repeat: no-repeat;
+    background-size: auto 1185px;
+    background-position: center -347px;
+  }
+}
+@media only screen and (min-width: 640px) {
+  .hero {
+    background-size: auto 1212px;
+  }
+}
+@media only screen and (min-width: 1240px) {
+  .hero {
     background-size: cover;
     background-position: center -347px;
   }
@@ -469,6 +479,12 @@ body {
   letter-spacing: 0.01em;
   text-decoration: none;
   color: #fff;
+}
+
+.header__item-link:hover {
+  letter-spacing: 0.01em;
+  text-decoration-line: underline;
+  opacity: 0.5;
 }
 
 .logo {
@@ -533,8 +549,9 @@ body {
 }
 
 .intro__links {
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
+  margin: 0 auto;
   margin-bottom: 80px;
 }
 
@@ -552,16 +569,16 @@ body {
 }
 
 .intro__link:first-child {
-  padding-right: 52px;
   position: relative;
   margin-bottom: 10px;
+  padding-right: 52px;
   border: 1px solid #FFFFFF;
 }
 
 .intro__link:first-child::after {
   position: absolute;
   top: 10px;
-  right: 96.5px;
+  right: 25%;
   width: 36px;
   height: 36px;
   background-image: url("/images/icons/videosym.svg");
@@ -575,6 +592,12 @@ body {
   border: 1px solid transparent;
 }
 
+@media only screen and (min-width: 591px) {
+  .intro__comp {
+    width: 453px;
+    height: 295px;
+  }
+}
 @media only screen and (min-width: 640px) {
   .intro__title {
     font-weight: 800;
@@ -585,12 +608,26 @@ body {
     max-width: 471px;
     margin: 24px auto 40px;
   }
+  .intro__desc {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 155%;
+    text-align: center;
+    letter-spacing: 0.01em;
+  }
+}
+@media only screen and (min-width: 807px) {
+  .intro__comp {
+    width: 563px;
+    height: 391px;
+  }
   .intro__links {
     flex-direction: row-reverse;
     margin-bottom: 117px;
   }
   .intro__link:first-child {
     margin-left: 33px;
+    margin-bottom: 0;
   }
 }
 @media only screen and (min-width: 1240px) {
@@ -609,6 +646,11 @@ body {
   flex-direction: column;
   margin: 0 auto;
   text-align: center;
+}
+
+.solution__title-box {
+  max-width: 575px;
+  margin: 0 auto;
 }
 
 .solution__title {

@@ -10,6 +10,10 @@
     margin: 0 auto;
     text-align: center;
 }
+.solution__title-box {
+    max-width: 575px;
+    margin: 0 auto;
+}
 .solution__title {
     @include mixins.titleUnstyled;
     font-size: 36px;

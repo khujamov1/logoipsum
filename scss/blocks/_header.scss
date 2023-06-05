@@ -33,6 +33,11 @@
     text-decoration: none;
     color: #fff;
 }
+.header__item-link:hover {
+    letter-spacing: 0.01em;
+    text-decoration-line: underline;
+    opacity: 0.5;
+}
 .logo {
     display: block;
 }
