@@ -4,6 +4,13 @@
     text-align: center;
     padding-top: 25px
 }
+.intro__big-box {
+    max-width: 737px;
+    margin: 0 auto;
+}
+.intro__title-box {
+    max-width: 737px
+}
 .intro__title {
     @include mixins.titleUnstyled;
     font-weight: 800;
@@ -22,13 +29,13 @@
 .intro__links {
     display: flex;
     flex-direction: column;
+    margin-bottom: 80px;
 }
 .intro__link {
     @include mixins.linkStyled;
     width: 342px;
     font-weight: 600;
     line-height: 155%;
-    margin-bottom: 80px;
     color: #FFFFFF;
 }
 .intro__link:first-child {
@@ -51,4 +58,36 @@
 .intro__link:nth-child(2) {
     background-color: var(--main-pink-color);
     border: 1px solid transparent;
+}
+
+@media only screen and (min-width: 640px) {
+    .intro__title {
+        font-weight: 800;
+        font-size: 56px;
+        line-height: 120%;
+    }
+    .intro__desc-box {
+        max-width: 471px;
+        margin: 24px auto 40px;
+    }
+    // .intro__desc {
+    //     font-weight: 500;
+    //     font-size: 18px;
+    //     line-height: 155%;
+    //     text-align: center;
+    //     letter-spacing: 0.01em;
+    // }
+    .intro__links {
+        flex-direction: row-reverse;
+        margin-bottom: 117px;
+    }
+    .intro__link:first-child {
+        margin-left: 33px;
+    }
+}
+@media only screen and (min-width: 1240px) {
+    .intro__comp {
+        width: 784px;
+        height: 514px;
+    }
 }

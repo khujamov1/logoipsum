@@ -34,7 +34,24 @@
     content: "";
 }
 .customer__button {
+    position: absolute;
+    z-index: 2;
     display: none;
+    width: 54px;
+    height: 54px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 2px solid var(--main-pink-color);
+    border-radius: 50%
+}
+.customer__button:first-child {
+    left: -27px;
+    background-image: url("/images/icons/arrowl.svg");
+}
+.customer__button:last-child {
+    right: -10px;
+    background-image: url("/images/icons/arrow.svg");
 }
 .customer__list {
     @include mixins.listUnstyled;
@@ -118,4 +135,10 @@
     margin: 0;
     line-height: 150%;
     color: #3D3A41;
+}
+
+@media only screen and (min-width: 1240px) {
+    .customer__button {
+        display: block;
+    }
 }

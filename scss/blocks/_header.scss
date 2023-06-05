@@ -1,3 +1,4 @@
+@use "../mixins";
 .site-header {
     padding: 55px 0;
 }
@@ -13,6 +14,28 @@
     border: none;
     background-image: url("/images/icons/switchbtn.svg");
 }
+.header__nav {
+    display: none;
+    margin-right: 30px;
+}
+.header__list {
+    @include mixins.listUnstyled;
+    display: flex;
+}
+.header__item:not(:last-child) {
+    margin-right: 40px;
+}
+.header__item-link {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 155%;
+    letter-spacing: 0.01em;
+    text-decoration: none;
+    color: #fff;
+}
+.logo {
+    display: block;
+}
 .header__menu {
     width: 26px;
     height: 26px;
@@ -20,4 +43,20 @@
     background-color: transparent;
     background-image: url("/images/icons/hamburgerbtn.svg");
     background-size: 26px 26px;
+}
+
+@media only screen and (min-width: 840px){
+    .header__inner {
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+    }
+    .header__menu {
+        display: none;
+    }
+    .header__nav {
+        display: block;
+    }
+    .logo__link {
+        margin-right: auto;
+    }
 }

@@ -30,6 +30,9 @@
     border: 1px solid var(--main-pink-color);
     border-radius: 32px;
 }
+.news__info-link:hover {
+    @include mixins.hoverStyled;
+}
 .news__list {
     @include mixins.listUnstyled;
     display: flex;

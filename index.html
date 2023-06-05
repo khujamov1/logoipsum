@@ -16,7 +16,25 @@
                 <div class="container">
                     <div class="header__inner">
                         <button class="header__button"></button>
-                        <img src="/images/icons/logo.svg" width="160" height="32" alt="the logo of logoipsum" class="logo">
+                        <nav class="header__nav">
+                            <ul class="header__list">
+                                <li class="header__item">
+                                    <a href="#" class="header__item-link">Home </a>
+                                </li>
+                                <li class="header__item">
+                                    <a href="#" class="header__item-link">About Us </a>
+                                </li>
+                                <li class="header__item">
+                                    <a href="#" class="header__item-link">Pricing</a>
+                                </li>
+                                <li class="header__item">
+                                    <a href="#" class="header__item-link">Contact Us</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <a href="./index.html" class="logo__link">
+                            <img src="/images/icons/logo.svg" width="160" height="32" alt="the logo of logoipsum" class="logo">
+                        </a>
                         <button class="header__menu"></button>
                     </div>
                 </div>
@@ -24,13 +42,19 @@
             <section class="intro">
                 <div class="container">
                     <div class="intro__inner">
-                        <h1 class="intro__title">
-                            Your digital business is in good hands with us!
-                        </h1>
-                        <p class="intro__desc">Make your work easier with an integrated ecosystem that lets all departments work properly together.</p>
-                        <div class="intro__links">
-                            <a href="" class="intro__link">Watch Video</a>
-                            <a href="" class="intro__link">Get Started</a>
+                        <div class="intro__big-box">
+                            <div class="intro__title-box">
+                                <h1 class="intro__title">
+                                    Your digital business is in good hands with us!
+                                </h1>
+                            </div>
+                            <div class="intro__desc-box">
+                                <p class="intro__desc">Make your work easier with an integrated ecosystem that lets all departments work properly together.</p>
+                            </div>
+                            <div class="intro__links">
+                                <a href="" class="intro__link">Watch Video</a>
+                                <a href="" class="intro__link">Get Started</a>
+                            </div>
                         </div>
                         <img src="./images/images/macbook.png" alt="macbook 16 pro" class="intro__comp">
                     </div>
@@ -47,19 +71,25 @@
                         <li class="solution__item">
                             <img src="./images/images/taskmf.svg" alt="Steps of software solutions" class="solution__img">
                             <h3 class="solution__item-title">Task Management</h3>
-                            <p class="solution__desc">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                            <div class="solution__desc-box">
+                                <p class="solution__desc">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                            </div>
                             <a href="#" class="solution__link">View More</a>
                         </li>
                         <li class="solution__item">
                             <img src="./images/images/taskms.svg" alt="Any statistics" class="solution__img">
                             <h3 class="solution__item-title">Task Management</h3>
-                            <p class="solution__desc">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                            <div class="solution__desc-box">
+                                <p class="solution__desc">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                            </div>
                             <a href="#" class="solution__link">View More</a>
                         </li>
                         <li class="solution__item">
                             <img src="./images/images/taskmth.svg" alt="Pie chart of solutions" class="solution__img">
                             <h3 class="solution__item-title">Task Management</h3>
-                            <p class="solution__desc">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                            <div class="solution__desc-box">
+                                <p class="solution__desc">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                            </div>
                             <a href="#" class="solution__link">View More</a>
                         </li>
                     </ul>
@@ -181,7 +211,7 @@
                 <div class="contact__inner">
                     <h2 class="contact__title">Get started a 15-days free trial</h2>
                     <p class="contact__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
-                    <form action="POST" class="contact__form">
+                    <form action="https://echo.htmlacademy.ru" method="POST" class="contact__form">
                         <label class="contact__label" aria-label="Enter your email">
                             <input type="email" name="user__email" class="contact__input" placeholder="Enter your email" required autocomplete="off">
                         </label>
@@ -289,9 +319,9 @@
                 </div>
                 <div class="footer__top-right">
                     <strong class="footer__strong">Subscribe</strong>
-                    <form action="POST" class="contact__form">
+                    <form action="https://echo.htmlacademy.ru" method="POST" class="contact__form">
                         <label class="contact__label" aria-label="Enter your email">
-                            <input type="email" name="user__email" class="contact__input" placeholder="Enter your email" required autocomplete="off">
+                            <input type="email" name="user__email" class="contact__input footer__input" placeholder="Enter your email" required autocomplete="off">
                         </label>
                         <button class="contact__button" type="submit">Sign Up</button>
                     </form>
@@ -300,9 +330,15 @@
             </div>
             <div class="footer__bottom">
                 <ul class="footer__bottom-links">
-                    <li class="footer__bottom-items"><a href="#" class="footer__bottom-link">Privacy Policy</a></li>
-                    <li class="footer__bottom-items"><a href="#" class="footer__bottom-link">Terms of Service</a></li>
-                    <li class="footer__bottom-items"><a href="#" class="footer__bottom-link">Cookies Settings</a></li>
+                    <li class="footer__bottom-items">
+                        <a href="#" class="footer__bottom-link">Privacy Policy</a>
+                        </li>
+                    <li class="footer__bottom-items">
+                        <a href="#" class="footer__bottom-link">Terms of Service</a>
+                    </li>
+                    <li class="footer__bottom-items">
+                        <a href="#" class="footer__bottom-link">Cookies Settings</a>
+                    </li>
                 </ul>
                 <p class="footer__bottom-desc">2022 airdokan. All right reserved.</p>
             </div>

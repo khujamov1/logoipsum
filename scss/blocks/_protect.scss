@@ -63,3 +63,35 @@
     color: var(--main-pink-color);
     border: 1px solid var(--main-pink-color);
 }
+.protect__link:hover {
+    @include mixins.hoverStyled;
+}
+
+
+@media only screen and (min-width: 1240px){
+    .protect__item {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 0;
+        padding: 100px 0;
+    }
+    .protect__item:nth-child(odd) {
+        flex-direction: row-reverse;
+    }
+    .protect__item:nth-child(even)>img {
+        margin-right: 40px;
+    }
+    .protect__img {
+        width: 620px;
+        height: 370px;
+        margin: 0;
+    }
+    .protect__text-box {
+        max-width: 624px;
+        text-align: left;
+    }
+    .protect__link {
+        margin: 0;
+    }
+}
