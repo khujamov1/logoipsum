@@ -310,7 +310,7 @@ template {
 
 :root {
   --main-pink-color: #ff007a;
-  --main-dark-color: var (--main-dark-color);
+  --main-dark-color: #211f25;
 }
 
 /* nunito-regular - latin */
@@ -725,7 +725,7 @@ body {
   line-height: 120%;
   letter-spacing: -0.01em;
   margin-bottom: 32px;
-  color: var --main-dark-color;
+  color: var(--main-dark-color);
 }
 
 .solution__desc-box {
@@ -746,7 +746,7 @@ body {
   line-height: 155%;
   letter-spacing: 0.02em;
   text-decoration: none;
-  color: var --main-dark-color;
+  color: var(--main-dark-color);
 }
 
 @media only screen and (min-width: 1240px) {
@@ -812,7 +812,7 @@ body {
   line-height: 120%;
   letter-spacing: -0.01em;
   margin-bottom: 16px;
-  color: var --main-dark-color;
+  color: var(--main-dark-color);
 }
 
 .protect__desc {
@@ -886,7 +886,7 @@ body {
   text-align: center;
   margin-bottom: 16px;
   letter-spacing: -0.01em;
-  color: var --main-dark-color;
+  color: var(--main-dark-color);
 }
 
 .customer__info {
@@ -977,7 +977,7 @@ body {
   letter-spacing: 0.02em;
   margin-top: 0;
   margin-bottom: 30px;
-  color: var --main-dark-color;
+  color: var(--main-dark-color);
 }
 
 .customer__details {
@@ -1021,7 +1021,7 @@ body {
   font-size: 20px;
   line-height: 150%;
   letter-spacing: -0.01em;
-  color: var --main-dark-color;
+  color: var(--main-dark-color);
 }
 
 .customer__job {
@@ -1097,7 +1097,7 @@ body {
   margin-bottom: 8px;
   line-height: 150%;
   letter-spacing: -0.01em;
-  color: var --main-dark-color;
+  color: var(--main-dark-color);
 }
 
 .price__cost {
@@ -1106,7 +1106,7 @@ body {
   font-size: 28px;
   line-height: 120%;
   text-align: center;
-  color: var --main-dark-color;
+  color: var(--main-dark-color);
 }
 
 .price__add-cost {
@@ -1296,7 +1296,7 @@ body {
   font-size: 36px;
   line-height: 49px;
   letter-spacing: -0.01em;
-  color: var --main-dark-color;
+  color: var(--main-dark-color);
 }
 
 .news__info {
@@ -1362,7 +1362,7 @@ body {
   line-height: 150%;
   margin-right: 15px;
   padding: 4px 8px;
-  color: var --main-dark-color;
+  color: var(--main-dark-color);
   background-color: #f4f4f4;
 }
 
@@ -1383,7 +1383,7 @@ body {
   font-size: 23px;
   line-height: 140%;
   margin-bottom: 8px;
-  color: var --main-dark-color;
+  color: var(--main-dark-color);
 }
 
 .news__desc-box {
@@ -1443,7 +1443,7 @@ body {
 .site-footer {
   padding-top: 50px;
   padding-bottom: 30px;
-  background-color: var --main-dark-color;
+  background-color: var(--main-dark-color);
 }
 
 .footer__top {
