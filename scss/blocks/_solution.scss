@@ -27,7 +27,7 @@
     line-height: 22px;
     letter-spacing: 0.01em;
     margin: 0;
-    color: #3D3A41;
+    color: #3d3a41;
 }
 .solution__list {
     @include mixins.listUnstyled;
@@ -43,7 +43,7 @@
     padding: 16px 5px;
 }
 .solution__item:hover {
-    background-color: #F7F5FF;
+    background-color: #f7f5ff;
 }
 .solution__item:hover .solution__link{
     color: var(--main-pink-color);
